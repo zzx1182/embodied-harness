@@ -1,0 +1,5 @@
+# 不需要 GPU 的那部分：回归用例、样例报告、eval_report.py。版本和 first_loop/requirements-lock.txt 一致（Python 3.12）。
+# 已经按「LIBERO 仿真环境与第一条可执行动作」装好 LIBERO 环境的，这三个包都已经有了，不用再装。
+numpy==2.5.3
+scipy==1.18.1
+pillow==12.3.0

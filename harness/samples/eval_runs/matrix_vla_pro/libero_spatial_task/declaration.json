@@ -1,0 +1,28 @@
+{
+  "mode": "vla",
+  "suite": "libero_spatial_task",
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "seeds": [
+    0
+  ],
+  "init_state_index": 0,
+  "budgets": {
+    "max_control_steps": 300,
+    "max_calls": 40,
+    "max_wall_s": 1800
+  },
+  "spec_hash": "22ebd1f6f3741bae",
+  "denominator": 10,
+  "started": "2026-09-22T13:29:41+0000"
+}

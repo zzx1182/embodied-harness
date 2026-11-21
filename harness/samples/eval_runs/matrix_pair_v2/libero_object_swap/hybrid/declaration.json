@@ -1,0 +1,24 @@
+{
+  "mode": "hybrid",
+  "suite": "libero_object_swap",
+  "tasks": [
+    0,
+    2,
+    1
+  ],
+  "seeds": [
+    0
+  ],
+  "init_state_index": [
+    0
+  ],
+  "plan": null,
+  "budgets": {
+    "max_control_steps": 300,
+    "max_calls": 30,
+    "max_wall_s": 2400.0
+  },
+  "spec_hash": "6a4e8a2f95d82dda",
+  "denominator": 3,
+  "started": "2026-09-23T08:47:05+0000"
+}

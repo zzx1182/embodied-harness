@@ -1,0 +1,24 @@
+{
+  "mode": "scripted",
+  "suite": "libero_10",
+  "tasks": [
+    0
+  ],
+  "seeds": [
+    0
+  ],
+  "init_state_index": [
+    0,
+    1,
+    2
+  ],
+  "plan": "pick up the alphabet soup and place it in the basket::20||pick up the tomato sauce and place it in the basket::20",
+  "budgets": {
+    "max_control_steps": 400,
+    "max_calls": 30,
+    "max_wall_s": 3000.0
+  },
+  "spec_hash": "aab3da80bcbf7985",
+  "denominator": 3,
+  "started": "2026-09-23T04:22:52+0000"
+}

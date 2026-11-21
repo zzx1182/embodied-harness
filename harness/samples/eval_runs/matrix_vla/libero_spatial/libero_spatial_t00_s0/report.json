@@ -1,0 +1,323 @@
+{
+  "run_id": "20f59c839cd3",
+  "episode_id": "c003230ddcaa",
+  "env": {
+    "suite": "libero_spatial",
+    "task_id": 0,
+    "seed": 0,
+    "init_state_index": 0,
+    "settle_steps": 10,
+    "size": 256,
+    "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+  },
+  "model": {},
+  "stop_reason": "native_success",
+  "native_success": true,
+  "control_steps": 71,
+  "sim_time_s": 3.55,
+  "model_calls": 0,
+  "rejections": 0,
+  "unknown": 0,
+  "mode": "vla",
+  "policy": {
+    "kind": "openpi_websocket",
+    "host": "127.0.0.1",
+    "port": 43861,
+    "preprocess": "rotate180+resize_with_pad224, state=eef_pos+rotvec+gripper_qpos",
+    "server_metadata": {
+      "experiment": "embodied-harness-preflight",
+      "config": "pi05_libero",
+      "control": "normalized LIBERO OSC_POSE, 7 dimensions"
+    }
+  },
+  "policy_calls": 8,
+  "policy_wait_s": 0.537,
+  "completed_segments": 8,
+  "wall_s": 4.933,
+  "model_wait_s": 0.0,
+  "tokens": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cached_input_tokens": 0
+  },
+  "budgets": {
+    "max_control_steps": 300,
+    "max_model_calls": 40,
+    "max_wall_s": 1800
+  },
+  "controller_spec_hash": "22ebd1f6f3741bae",
+  "segments": [
+    {
+      "request_id": "dba1c2352da0424d",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.21124,
+          -0.01109,
+          1.17425
+        ],
+        "quat": [
+          0.99961,
+          -0.00091,
+          -0.02792,
+          -0.00026
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.14068,
+          0.03679,
+          1.16597
+        ],
+        "quat": [
+          0.99987,
+          0.00281,
+          -0.00889,
+          -0.013
+        ]
+      }
+    },
+    {
+      "request_id": "ec2c4f76f526461f",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.14068,
+          0.03679,
+          1.16597
+        ],
+        "quat": [
+          0.99987,
+          0.00281,
+          -0.00889,
+          -0.013
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.02843,
+          0.09274,
+          1.10291
+        ],
+        "quat": [
+          0.99967,
+          0.00248,
+          0.00869,
+          -0.02411
+        ]
+      }
+    },
+    {
+      "request_id": "d7cbb81668fd4645",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.02843,
+          0.09274,
+          1.10291
+        ],
+        "quat": [
+          0.99967,
+          0.00248,
+          0.00869,
+          -0.02411
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.04153,
+          0.14272,
+          0.99747
+        ],
+        "quat": [
+          0.99948,
+          0.01849,
+          0.0153,
+          -0.02175
+        ]
+      }
+    },
+    {
+      "request_id": "dcbe2c015a3949af",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.04153,
+          0.14272,
+          0.99747
+        ],
+        "quat": [
+          0.99948,
+          0.01849,
+          0.0153,
+          -0.02175
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.07039,
+          0.16219,
+          0.93704
+        ],
+        "quat": [
+          0.99917,
+          0.01093,
+          0.02932,
+          -0.02597
+        ]
+      }
+    },
+    {
+      "request_id": "1a0e33bbb1104399",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.07039,
+          0.16219,
+          0.93704
+        ],
+        "quat": [
+          0.99917,
+          0.01093,
+          0.02932,
+          -0.02597
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.06184,
+          0.15691,
+          0.98631
+        ],
+        "quat": [
+          0.99813,
+          -0.04511,
+          -0.02899,
+          -0.02945
+        ]
+      }
+    },
+    {
+      "request_id": "58bfa498d9354a7d",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.06184,
+          0.15691,
+          0.98631
+        ],
+        "quat": [
+          0.99813,
+          -0.04511,
+          -0.02899,
+          -0.02945
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.01589,
+          0.15647,
+          1.05311
+        ],
+        "quat": [
+          0.99396,
+          -0.10572,
+          -0.01415,
+          -0.02579
+        ]
+      }
+    },
+    {
+      "request_id": "5adab259d47b43bb",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.01589,
+          0.15647,
+          1.05311
+        ],
+        "quat": [
+          0.99396,
+          -0.10572,
+          -0.01415,
+          -0.02579
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.03619,
+          0.16373,
+          0.96726
+        ],
+        "quat": [
+          0.99036,
+          -0.12806,
+          -0.02974,
+          -0.04358
+        ]
+      }
+    },
+    {
+      "request_id": "cb75364c1bf7413a",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 1,
+      "native_success": 1,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.03619,
+          0.16373,
+          0.96726
+        ],
+        "quat": [
+          0.99036,
+          -0.12806,
+          -0.02974,
+          -0.04358
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.03134,
+          0.16767,
+          0.95754
+        ],
+        "quat": [
+          0.9907,
+          -0.12484,
+          -0.03285,
+          -0.04311
+        ]
+      }
+    }
+  ]
+}

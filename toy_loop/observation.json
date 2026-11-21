@@ -1,0 +1,6 @@
+{
+  "obs_seq": 1,
+  "instruction": "pick up the alphabet soup and place it in the basket",
+  "eef_pos": [-0.1526, -0.0063, 0.2484],
+  "gripper": "open"
+}

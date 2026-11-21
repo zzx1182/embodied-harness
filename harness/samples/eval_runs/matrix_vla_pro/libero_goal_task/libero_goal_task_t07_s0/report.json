@@ -1,0 +1,224 @@
+{
+  "run_id": "fc8f8cdd3635",
+  "episode_id": "1b61445f7f8d",
+  "env": {
+    "suite": "libero_goal_task",
+    "task_id": 7,
+    "seed": 0,
+    "init_state_index": 0,
+    "settle_steps": 10,
+    "size": 256,
+    "instruction": "Turn off the stove",
+    "filename_language": "turn on the stove",
+    "bddl_language": "Turn off the stove",
+    "bddl_file": "turn_on_the_stove.bddl"
+  },
+  "model": {},
+  "stop_reason": "native_success",
+  "native_success": true,
+  "control_steps": 46,
+  "sim_time_s": 2.3,
+  "model_calls": 0,
+  "rejections": 0,
+  "unknown": 0,
+  "mode": "vla",
+  "policy": {
+    "kind": "openpi_websocket",
+    "host": "127.0.0.1",
+    "port": 43861,
+    "preprocess": "rotate180+resize_with_pad224, state=eef_pos+rotvec+gripper_qpos",
+    "server_metadata": {
+      "experiment": "embodied-harness-preflight",
+      "config": "pi05_libero",
+      "control": "normalized LIBERO OSC_POSE, 7 dimensions"
+    }
+  },
+  "policy_calls": 5,
+  "policy_wait_s": 0.342,
+  "completed_segments": 5,
+  "wall_s": 3.455,
+  "model_wait_s": 0.0,
+  "tokens": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cached_input_tokens": 0
+  },
+  "budgets": {
+    "max_control_steps": 300,
+    "max_model_calls": 40,
+    "max_wall_s": 1800
+  },
+  "controller_spec_hash": "22ebd1f6f3741bae",
+  "segments": [
+    {
+      "request_id": "d8ece4cc1f8243c5",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.21583,
+          0.05561,
+          1.171
+        ],
+        "quat": [
+          0.99935,
+          0.00304,
+          -0.03575,
+          -0.00305
+        ]
+      }
+    },
+    {
+      "request_id": "89680fb31305400e",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.21583,
+          0.05561,
+          1.171
+        ],
+        "quat": [
+          0.99935,
+          0.00304,
+          -0.03575,
+          -0.00305
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.24678,
+          0.15762,
+          1.14934
+        ],
+        "quat": [
+          0.99919,
+          0.00363,
+          -0.0401,
+          0.0022
+        ]
+      }
+    },
+    {
+      "request_id": "17032511f3484d4e",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.24678,
+          0.15762,
+          1.14934
+        ],
+        "quat": [
+          0.99919,
+          0.00363,
+          -0.0401,
+          0.0022
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.30412,
+          0.1882,
+          1.0586
+        ],
+        "quat": [
+          0.99867,
+          -0.00621,
+          -0.05075,
+          -0.00634
+        ]
+      }
+    },
+    {
+      "request_id": "9595acd3052b4399",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.30412,
+          0.1882,
+          1.0586
+        ],
+        "quat": [
+          0.99867,
+          -0.00621,
+          -0.05075,
+          -0.00634
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.3827,
+          0.20164,
+          0.95634
+        ],
+        "quat": [
+          0.99817,
+          -0.03143,
+          -0.0475,
+          -0.02019
+        ]
+      }
+    },
+    {
+      "request_id": "9f77a065ff8f44d6",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 6,
+      "native_success": 1,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.3827,
+          0.20164,
+          0.95634
+        ],
+        "quat": [
+          0.99817,
+          -0.03143,
+          -0.0475,
+          -0.02019
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.40397,
+          0.20661,
+          0.92945
+        ],
+        "quat": [
+          0.99725,
+          -0.05369,
+          -0.0441,
+          -0.02591
+        ]
+      }
+    }
+  ]
+}

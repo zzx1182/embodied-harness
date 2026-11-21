@@ -1,0 +1,968 @@
+{
+  "run_id": "8268b509eaf4",
+  "episode_id": "02631553099d",
+  "env": {
+    "suite": "libero_10",
+    "task_id": 0,
+    "seed": 0,
+    "init_state_index": 0,
+    "settle_steps": 10,
+    "size": 256,
+    "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+    "filename_language": "put both the alphabet soup and the tomato sauce in the basket",
+    "bddl_language": "put both the alphabet soup and the tomato sauce in the basket",
+    "bddl_file": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl"
+  },
+  "model": {},
+  "stop_reason": "native_success",
+  "native_success": true,
+  "control_steps": 240,
+  "sim_time_s": 12.0,
+  "model_calls": 0,
+  "model_errors": 0,
+  "rejections": 0,
+  "unknown": 0,
+  "mode": "scripted",
+  "plan": [
+    [
+      "pick up the alphabet soup and place it in the basket",
+      20
+    ],
+    [
+      "pick up the tomato sauce and place it in the basket",
+      20
+    ]
+  ],
+  "policy": {
+    "kind": "openpi_websocket",
+    "host": "127.0.0.1",
+    "port": 43861,
+    "preprocess": "rotate180+resize_with_pad224, state=eef_pos+rotvec+gripper_qpos",
+    "server_metadata": {
+      "experiment": "embodied-harness-preflight",
+      "config": "pi05_libero",
+      "control": "normalized LIBERO OSC_POSE, 7 dimensions"
+    }
+  },
+  "policy_calls": 24,
+  "policy_wait_s": 1.628,
+  "completed_segments": 24,
+  "cancelled_segments": 0,
+  "wall_s": 19.807,
+  "model_wait_s": 0.0,
+  "tokens": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cached_input_tokens": 0
+  },
+  "budgets": {
+    "max_control_steps": 400,
+    "max_model_calls": 30,
+    "max_wall_s": 3000.0
+  },
+  "controller_spec_hash": "aab3da80bcbf7985",
+  "final_progress": [
+    {
+      "predicate": "in alphabet_soup_1 basket_1_contain_region",
+      "value": true
+    },
+    {
+      "predicate": "in tomato_sauce_1 basket_1_contain_region",
+      "value": true
+    }
+  ],
+  "items_done": 2,
+  "items_total": 2,
+  "declarations": [],
+  "false_acceptances": 0,
+  "segments": [
+    {
+      "request_id": "5b93aeb40f0848f9",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.04615,
+          -0.00357,
+          0.70205
+        ],
+        "quat": [
+          0.99964,
+          -0.00045,
+          -0.02694,
+          -0.00012
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.03158,
+          -0.04985,
+          0.7021
+        ],
+        "quat": [
+          0.99904,
+          -0.0046,
+          -0.04352,
+          0.00122
+        ]
+      }
+    },
+    {
+      "request_id": "0b19735c237d4717",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.03158,
+          -0.04985,
+          0.7021
+        ],
+        "quat": [
+          0.99904,
+          -0.0046,
+          -0.04352,
+          0.00122
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.0175,
+          -0.13363,
+          0.69023
+        ],
+        "quat": [
+          0.99875,
+          -0.00664,
+          -0.04886,
+          -0.00773
+        ]
+      }
+    },
+    {
+      "request_id": "7b37896964384776",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.0175,
+          -0.13363,
+          0.69023
+        ],
+        "quat": [
+          0.99875,
+          -0.00664,
+          -0.04886,
+          -0.00773
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.00843,
+          -0.14885,
+          0.62823
+        ],
+        "quat": [
+          0.99845,
+          -0.00476,
+          -0.05492,
+          -0.00746
+        ]
+      }
+    },
+    {
+      "request_id": "eeea8b5a793c428a",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.00843,
+          -0.14885,
+          0.62823
+        ],
+        "quat": [
+          0.99845,
+          -0.00476,
+          -0.05492,
+          -0.00746
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.02768,
+          -0.14971,
+          0.53801
+        ],
+        "quat": [
+          0.99804,
+          0.00093,
+          -0.06198,
+          -0.00827
+        ]
+      }
+    },
+    {
+      "request_id": "07ebaded5b0e4602",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.02768,
+          -0.14971,
+          0.53801
+        ],
+        "quat": [
+          0.99804,
+          0.00093,
+          -0.06198,
+          -0.00827
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.06627,
+          -0.15152,
+          0.47989
+        ],
+        "quat": [
+          0.99804,
+          0.0296,
+          -0.05496,
+          -0.00374
+        ]
+      }
+    },
+    {
+      "request_id": "1656309e62ad4528",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.06627,
+          -0.15152,
+          0.47989
+        ],
+        "quat": [
+          0.99804,
+          0.0296,
+          -0.05496,
+          -0.00374
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.07374,
+          -0.15438,
+          0.51584
+        ],
+        "quat": [
+          0.99602,
+          0.04446,
+          -0.07615,
+          0.0131
+        ]
+      }
+    },
+    {
+      "request_id": "1257ce84d61c4e3d",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.07374,
+          -0.15438,
+          0.51584
+        ],
+        "quat": [
+          0.99602,
+          0.04446,
+          -0.07615,
+          0.0131
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.05992,
+          -0.1422,
+          0.62495
+        ],
+        "quat": [
+          0.9938,
+          0.04722,
+          -0.09793,
+          0.02324
+        ]
+      }
+    },
+    {
+      "request_id": "baaefffae4f7475a",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.05992,
+          -0.1422,
+          0.62495
+        ],
+        "quat": [
+          0.9938,
+          0.04722,
+          -0.09793,
+          0.02324
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.02581,
+          -0.05259,
+          0.685
+        ],
+        "quat": [
+          0.99342,
+          0.0535,
+          -0.09823,
+          0.02474
+        ]
+      }
+    },
+    {
+      "request_id": "b909a7b7ca0b4dea",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.02581,
+          -0.05259,
+          0.685
+        ],
+        "quat": [
+          0.99342,
+          0.0535,
+          -0.09823,
+          0.02474
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.00371,
+          0.05141,
+          0.69259
+        ],
+        "quat": [
+          0.99316,
+          0.06711,
+          -0.09214,
+          0.02548
+        ]
+      }
+    },
+    {
+      "request_id": "c94b0d0a4f774b6e",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.00371,
+          0.05141,
+          0.69259
+        ],
+        "quat": [
+          0.99316,
+          0.06711,
+          -0.09214,
+          0.02548
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.03013,
+          0.15596,
+          0.68986
+        ],
+        "quat": [
+          0.99407,
+          0.06569,
+          -0.08369,
+          0.02241
+        ]
+      }
+    },
+    {
+      "request_id": "3afe800ab7b046e0",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.03013,
+          0.15596,
+          0.68986
+        ],
+        "quat": [
+          0.99407,
+          0.06569,
+          -0.08369,
+          0.02241
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.0412,
+          0.24604,
+          0.67228
+        ],
+        "quat": [
+          0.99807,
+          0.02414,
+          -0.05094,
+          0.02609
+        ]
+      }
+    },
+    {
+      "request_id": "791e187f3ab0432a",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.0412,
+          0.24604,
+          0.67228
+        ],
+        "quat": [
+          0.99807,
+          0.02414,
+          -0.05094,
+          0.02609
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.01477,
+          0.26113,
+          0.6112
+        ],
+        "quat": [
+          0.99935,
+          -0.01103,
+          -0.03413,
+          0.00451
+        ]
+      }
+    },
+    {
+      "request_id": "0f3d6b57356d4e8c",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.01477,
+          0.26113,
+          0.6112
+        ],
+        "quat": [
+          0.99935,
+          -0.01103,
+          -0.03413,
+          0.00451
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.00731,
+          0.25818,
+          0.63801
+        ],
+        "quat": [
+          0.99949,
+          -0.02015,
+          -0.02445,
+          -0.00396
+        ]
+      }
+    },
+    {
+      "request_id": "e0f639063523471f",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.00731,
+          0.25818,
+          0.63801
+        ],
+        "quat": [
+          0.99949,
+          -0.02015,
+          -0.02445,
+          -0.00396
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.00235,
+          0.25516,
+          0.66546
+        ],
+        "quat": [
+          0.99907,
+          -0.02389,
+          -0.03467,
+          -0.00905
+        ]
+      }
+    },
+    {
+      "request_id": "8e81726470674578",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.00235,
+          0.25516,
+          0.66546
+        ],
+        "quat": [
+          0.99907,
+          -0.02389,
+          -0.03467,
+          -0.00905
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.00161,
+          0.16624,
+          0.67526
+        ],
+        "quat": [
+          0.99631,
+          -0.02835,
+          -0.07659,
+          -0.0264
+        ]
+      }
+    },
+    {
+      "request_id": "d5c67ca339c5445b",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.00161,
+          0.16624,
+          0.67526
+        ],
+        "quat": [
+          0.99631,
+          -0.02835,
+          -0.07659,
+          -0.0264
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.03711,
+          0.06675,
+          0.64581
+        ],
+        "quat": [
+          0.99473,
+          -0.04103,
+          -0.08516,
+          -0.03963
+        ]
+      }
+    },
+    {
+      "request_id": "5c5009a2072942e2",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.03711,
+          0.06675,
+          0.64581
+        ],
+        "quat": [
+          0.99473,
+          -0.04103,
+          -0.08516,
+          -0.03963
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.06758,
+          0.05234,
+          0.55059
+        ],
+        "quat": [
+          0.99597,
+          -0.03958,
+          -0.06947,
+          -0.04064
+        ]
+      }
+    },
+    {
+      "request_id": "c8637e5ae0e2485b",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.06758,
+          0.05234,
+          0.55059
+        ],
+        "quat": [
+          0.99597,
+          -0.03958,
+          -0.06947,
+          -0.04064
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.09938,
+          0.05161,
+          0.48141
+        ],
+        "quat": [
+          0.99695,
+          -0.03897,
+          -0.05489,
+          -0.03938
+        ]
+      }
+    },
+    {
+      "request_id": "399737de944547ce",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.09938,
+          0.05161,
+          0.48141
+        ],
+        "quat": [
+          0.99695,
+          -0.03897,
+          -0.05489,
+          -0.03938
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.10257,
+          0.04926,
+          0.50722
+        ],
+        "quat": [
+          0.99735,
+          -0.03744,
+          -0.05448,
+          -0.03048
+        ]
+      }
+    },
+    {
+      "request_id": "5ea27c9c21df481e",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.10257,
+          0.04926,
+          0.50722
+        ],
+        "quat": [
+          0.99735,
+          -0.03744,
+          -0.05448,
+          -0.03048
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.08802,
+          0.05087,
+          0.58616
+        ],
+        "quat": [
+          0.99583,
+          -0.04404,
+          -0.07472,
+          -0.02835
+        ]
+      }
+    },
+    {
+      "request_id": "3a96b3ded79545d3",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.08802,
+          0.05087,
+          0.58616
+        ],
+        "quat": [
+          0.99583,
+          -0.04404,
+          -0.07472,
+          -0.02835
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.05018,
+          0.10915,
+          0.66624
+        ],
+        "quat": [
+          0.99312,
+          -0.06416,
+          -0.09271,
+          -0.03154
+        ]
+      }
+    },
+    {
+      "request_id": "f2c21d5ec83042d6",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.05018,
+          0.10915,
+          0.66624
+        ],
+        "quat": [
+          0.99312,
+          -0.06416,
+          -0.09271,
+          -0.03154
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.02246,
+          0.20203,
+          0.67678
+        ],
+        "quat": [
+          0.9914,
+          -0.09465,
+          -0.08255,
+          -0.03678
+        ]
+      }
+    },
+    {
+      "request_id": "1c9ae058259c48cd",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.02246,
+          0.20203,
+          0.67678
+        ],
+        "quat": [
+          0.9914,
+          -0.09465,
+          -0.08255,
+          -0.03678
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.00605,
+          0.25828,
+          0.6257
+        ],
+        "quat": [
+          0.98961,
+          -0.1369,
+          -0.01606,
+          -0.04083
+        ]
+      }
+    },
+    {
+      "request_id": "7dc420986642436b",
+      "status": "COMPLETED",
+      "tool": "accept_vla",
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 1,
+      "target_pos": null,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.00605,
+          0.25828,
+          0.6257
+        ],
+        "quat": [
+          0.98961,
+          -0.1369,
+          -0.01606,
+          -0.04083
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.01507,
+          0.25975,
+          0.64341
+        ],
+        "quat": [
+          0.98088,
+          -0.19091,
+          0.00297,
+          -0.03774
+        ]
+      }
+    }
+  ]
+}

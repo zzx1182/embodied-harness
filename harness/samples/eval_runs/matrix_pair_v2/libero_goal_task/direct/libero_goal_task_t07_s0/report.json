@@ -1,0 +1,1402 @@
+{
+  "run_id": "8e68308ae0fa",
+  "episode_id": "6e280a639d48",
+  "env": {
+    "suite": "libero_goal_task",
+    "task_id": 7,
+    "seed": 0,
+    "init_state_index": 0,
+    "settle_steps": 10,
+    "size": 256,
+    "instruction": "Turn off the stove",
+    "filename_language": "turn on the stove",
+    "bddl_language": "Turn off the stove",
+    "bddl_file": "turn_on_the_stove.bddl"
+  },
+  "model": {
+    "kind": "codex_cli",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium"
+  },
+  "stop_reason": "budget:model_calls",
+  "native_success": false,
+  "control_steps": 95,
+  "sim_time_s": 4.75,
+  "model_calls": 30,
+  "model_errors": 0,
+  "rejections": 11,
+  "unknown": 0,
+  "mode": "direct",
+  "plan": [],
+  "policy": null,
+  "policy_calls": 0,
+  "policy_wait_s": 0,
+  "completed_segments": 19,
+  "cancelled_segments": 0,
+  "wall_s": 1269.542,
+  "model_wait_s": 1248.171,
+  "infra_wait_s": 0.0,
+  "tokens": {
+    "input_tokens": 306611,
+    "output_tokens": 11705,
+    "cached_input_tokens": 210560
+  },
+  "budgets": {
+    "max_control_steps": 300,
+    "max_model_calls": 30,
+    "max_wall_s": 2400.0
+  },
+  "controller_spec_hash": "6a4e8a2f95d82dda",
+  "final_progress": [
+    {
+      "predicate": "turnoff flat_stove_1",
+      "value": false
+    }
+  ],
+  "items_done": 0,
+  "items_total": 1,
+  "declarations": [],
+  "false_acceptances": 0,
+  "segments": [
+    {
+      "request_id": "1caa786280104040",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.24,
+        -0.02,
+        1.14
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.05,
+        "limit": 0.05,
+        "current": [
+          -0.2085,
+          0.0,
+          1.1733
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      }
+    },
+    {
+      "request_id": "9718dbcca6ff4568",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.24846,
+        0.0,
+        1.13328
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0566,
+        "limit": 0.05,
+        "current": [
+          -0.2085,
+          0.0,
+          1.1733
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      }
+    },
+    {
+      "request_id": "6ecfe6990f9c41bc",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.20846,
+        0.0,
+        1.13328
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.20778,
+          0.0,
+          1.14157
+        ],
+        "quat": [
+          0.99956,
+          0.00025,
+          -0.02979,
+          -1e-05
+        ]
+      }
+    },
+    {
+      "request_id": "4dbf4a0348c341cb",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.237,
+        0.0,
+        1.11
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.20778,
+          0.0,
+          1.14157
+        ],
+        "quat": [
+          0.99956,
+          0.00025,
+          -0.02979,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.22782,
+          0.0,
+          1.11781
+        ],
+        "quat": [
+          0.99936,
+          0.00025,
+          -0.03563,
+          -1e-05
+        ]
+      }
+    },
+    {
+      "request_id": "5afbecafd28c4766",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.19,
+        -0.03,
+        1.09
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0557,
+        "limit": 0.05,
+        "current": [
+          -0.2278,
+          0.0,
+          1.1178
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.22782,
+          0.0,
+          1.11781
+        ],
+        "quat": [
+          0.99936,
+          0.00025,
+          -0.03563,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.22782,
+          0.0,
+          1.11781
+        ],
+        "quat": [
+          0.99936,
+          0.00025,
+          -0.03563,
+          -1e-05
+        ]
+      }
+    },
+    {
+      "request_id": "f04d4eab1b604fd9",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.19782,
+        -0.03,
+        1.07781
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0583,
+        "limit": 0.05,
+        "current": [
+          -0.2278,
+          0.0,
+          1.1178
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.22782,
+          0.0,
+          1.11781
+        ],
+        "quat": [
+          0.99936,
+          0.00025,
+          -0.03563,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.22782,
+          0.0,
+          1.11781
+        ],
+        "quat": [
+          0.99936,
+          0.00025,
+          -0.03563,
+          -1e-05
+        ]
+      }
+    },
+    {
+      "request_id": "2196f3b77f584bb2",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.21,
+        -0.015,
+        1.08
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.22782,
+          0.0,
+          1.11781
+        ],
+        "quat": [
+          0.99936,
+          0.00025,
+          -0.03563,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.22085,
+          -0.01179,
+          1.08241
+        ],
+        "quat": [
+          0.99969,
+          -0.00013,
+          -0.02484,
+          0.00041
+        ]
+      }
+    },
+    {
+      "request_id": "31b59c33412a4bcc",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.26085,
+        0.01821,
+        1.08241
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.05,
+        "limit": 0.05,
+        "current": [
+          -0.2208,
+          -0.0118,
+          1.0824
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.22085,
+          -0.01179,
+          1.08241
+        ],
+        "quat": [
+          0.99969,
+          -0.00013,
+          -0.02484,
+          0.00041
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.22085,
+          -0.01179,
+          1.08241
+        ],
+        "quat": [
+          0.99969,
+          -0.00013,
+          -0.02484,
+          0.00041
+        ]
+      }
+    },
+    {
+      "request_id": "45f8f120146241c6",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.25,
+        -0.03,
+        1.05
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.22085,
+          -0.01179,
+          1.08241
+        ],
+        "quat": [
+          0.99969,
+          -0.00013,
+          -0.02484,
+          0.00041
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.23811,
+          -0.02692,
+          1.05922
+        ],
+        "quat": [
+          0.99941,
+          -0.00021,
+          -0.03424,
+          -0.0001
+        ]
+      }
+    },
+    {
+      "request_id": "828bfa8c74ca45d6",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.27,
+        -0.04,
+        1.03
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.23811,
+          -0.02692,
+          1.05922
+        ],
+        "quat": [
+          0.99941,
+          -0.00021,
+          -0.03424,
+          -0.0001
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.265,
+          -0.0377,
+          1.0351
+        ],
+        "quat": [
+          0.99946,
+          -0.00017,
+          -0.0329,
+          -0.00017
+        ]
+      }
+    },
+    {
+      "request_id": "b2ad4b85615a44c2",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.305,
+        -0.0377,
+        1.0351
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.265,
+          -0.0377,
+          1.0351
+        ],
+        "quat": [
+          0.99946,
+          -0.00017,
+          -0.0329,
+          -0.00017
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.2979,
+          -0.03804,
+          1.0345
+        ],
+        "quat": [
+          0.99948,
+          0.00036,
+          -0.03219,
+          -0.00045
+        ]
+      }
+    },
+    {
+      "request_id": "6c376e6a2e8244d8",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.328,
+        -0.058,
+        1.0045
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.2979,
+          -0.03804,
+          1.0345
+        ],
+        "quat": [
+          0.99948,
+          0.00036,
+          -0.03219,
+          -0.00045
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.32404,
+          -0.05348,
+          1.01027
+        ],
+        "quat": [
+          0.99954,
+          -0.00026,
+          -0.03019,
+          9e-05
+        ]
+      }
+    },
+    {
+      "request_id": "80dfb3e8cbfa43a0",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.32404,
+        -0.05348,
+        0.97527
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.32404,
+          -0.05348,
+          1.01027
+        ],
+        "quat": [
+          0.99954,
+          -0.00026,
+          -0.03019,
+          9e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.3228,
+          -0.05425,
+          0.99381
+        ],
+        "quat": [
+          0.99981,
+          -0.01749,
+          -0.00754,
+          0.00319
+        ]
+      }
+    },
+    {
+      "request_id": "05e5dcec10f14d7a",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.35,
+        -0.07,
+        0.994
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.3228,
+          -0.05425,
+          0.99381
+        ],
+        "quat": [
+          0.99981,
+          -0.01749,
+          -0.00754,
+          0.00319
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.34356,
+          -0.06634,
+          0.99443
+        ],
+        "quat": [
+          0.99977,
+          -0.01958,
+          -0.00828,
+          0.00298
+        ]
+      }
+    },
+    {
+      "request_id": "3aa14cc3a6b64914",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.38,
+        -0.08,
+        0.96
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.052,
+        "limit": 0.05,
+        "current": [
+          -0.3436,
+          -0.0663,
+          0.9944
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.34356,
+          -0.06634,
+          0.99443
+        ],
+        "quat": [
+          0.99977,
+          -0.01958,
+          -0.00828,
+          0.00298
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.34356,
+          -0.06634,
+          0.99443
+        ],
+        "quat": [
+          0.99977,
+          -0.01958,
+          -0.00828,
+          0.00298
+        ]
+      }
+    },
+    {
+      "request_id": "3b1364e828ea47b1",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.373,
+        -0.086,
+        0.994
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.34356,
+          -0.06634,
+          0.99443
+        ],
+        "quat": [
+          0.99977,
+          -0.01958,
+          -0.00828,
+          0.00298
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.36091,
+          -0.07673,
+          0.99706
+        ],
+        "quat": [
+          0.99991,
+          -0.01123,
+          -0.00649,
+          0.00378
+        ]
+      }
+    },
+    {
+      "request_id": "3254895ac3644f40",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.40091,
+        -0.09673,
+        0.96706
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0538,
+        "limit": 0.05,
+        "current": [
+          -0.3609,
+          -0.0767,
+          0.9971
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.36091,
+          -0.07673,
+          0.99706
+        ],
+        "quat": [
+          0.99991,
+          -0.01123,
+          -0.00649,
+          0.00378
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.36091,
+          -0.07673,
+          0.99706
+        ],
+        "quat": [
+          0.99991,
+          -0.01123,
+          -0.00649,
+          0.00378
+        ]
+      }
+    },
+    {
+      "request_id": "ec90ede558a04fe3",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.395,
+        -0.077,
+        0.98
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.36091,
+          -0.07673,
+          0.99706
+        ],
+        "quat": [
+          0.99991,
+          -0.01123,
+          -0.00649,
+          0.00378
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.36355,
+          -0.07696,
+          0.99687
+        ],
+        "quat": [
+          0.99997,
+          -0.00043,
+          -0.00587,
+          0.00521
+        ]
+      }
+    },
+    {
+      "request_id": "be14616e460a4bd9",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.395,
+        -0.09,
+        0.97
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.36355,
+          -0.07696,
+          0.99687
+        ],
+        "quat": [
+          0.99997,
+          -0.00043,
+          -0.00587,
+          0.00521
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.36205,
+          -0.07712,
+          0.99645
+        ],
+        "quat": [
+          0.99995,
+          -0.0066,
+          -0.00028,
+          0.00727
+        ]
+      }
+    },
+    {
+      "request_id": "4d0f02ff50004b3f",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.39,
+        -0.02,
+        0.96
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0733,
+        "limit": 0.05,
+        "current": [
+          -0.362,
+          -0.0771,
+          0.9965
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.36205,
+          -0.07712,
+          0.99645
+        ],
+        "quat": [
+          0.99995,
+          -0.0066,
+          -0.00028,
+          0.00727
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.36205,
+          -0.07712,
+          0.99645
+        ],
+        "quat": [
+          0.99995,
+          -0.0066,
+          -0.00028,
+          0.00727
+        ]
+      }
+    },
+    {
+      "request_id": "a8b12f3c4dca45d7",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.392,
+        -0.107,
+        0.996
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.36205,
+          -0.07712,
+          0.99645
+        ],
+        "quat": [
+          0.99995,
+          -0.0066,
+          -0.00028,
+          0.00727
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.37236,
+          -0.08676,
+          1.00222
+        ],
+        "quat": [
+          0.99996,
+          0.00256,
+          -0.0,
+          0.00801
+        ]
+      }
+    },
+    {
+      "request_id": "5a141628af59448b",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.407,
+        -0.087,
+        1.002
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.37236,
+          -0.08676,
+          1.00222
+        ],
+        "quat": [
+          0.99996,
+          0.00256,
+          -0.0,
+          0.00801
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.39016,
+          -0.08788,
+          1.00687
+        ],
+        "quat": [
+          0.99995,
+          0.00608,
+          -0.00254,
+          0.00793
+        ]
+      }
+    },
+    {
+      "request_id": "8593e06bf19d4c19",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.42,
+        -0.12,
+        1.005
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.39016,
+          -0.08788,
+          1.00687
+        ],
+        "quat": [
+          0.99995,
+          0.00608,
+          -0.00254,
+          0.00793
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.39988,
+          -0.09078,
+          1.00743
+        ],
+        "quat": [
+          0.9994,
+          0.0219,
+          -0.02548,
+          0.00866
+        ]
+      }
+    },
+    {
+      "request_id": "f413d6e6231648df",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.43,
+        -0.11,
+        0.98
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.39988,
+          -0.09078,
+          1.00743
+        ],
+        "quat": [
+          0.9994,
+          0.0219,
+          -0.02548,
+          0.00866
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.40075,
+          -0.09223,
+          1.00428
+        ],
+        "quat": [
+          0.9994,
+          0.01971,
+          -0.02488,
+          0.01376
+        ]
+      }
+    },
+    {
+      "request_id": "11abe6cca5d246d6",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.40075,
+        -0.13223,
+        1.00428
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.40075,
+          -0.09223,
+          1.00428
+        ],
+        "quat": [
+          0.9994,
+          0.01971,
+          -0.02488,
+          0.01376
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.401,
+          -0.09273,
+          1.00388
+        ],
+        "quat": [
+          0.99933,
+          0.02127,
+          -0.02458,
+          0.017
+        ]
+      }
+    },
+    {
+      "request_id": "022eafe901b34007",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.431,
+        -0.123,
+        0.964
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0584,
+        "limit": 0.05,
+        "current": [
+          -0.401,
+          -0.0927,
+          1.0039
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.401,
+          -0.09273,
+          1.00388
+        ],
+        "quat": [
+          0.99933,
+          0.02127,
+          -0.02458,
+          0.017
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.401,
+          -0.09273,
+          1.00388
+        ],
+        "quat": [
+          0.99933,
+          0.02127,
+          -0.02458,
+          0.017
+        ]
+      }
+    },
+    {
+      "request_id": "deec0ce9d2b847de",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.44,
+        -0.08,
+        1.00388
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.401,
+          -0.09273,
+          1.00388
+        ],
+        "quat": [
+          0.99933,
+          0.02127,
+          -0.02458,
+          0.017
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.4062,
+          -0.09,
+          1.01428
+        ],
+        "quat": [
+          0.99867,
+          0.02092,
+          -0.04476,
+          0.01479
+        ]
+      }
+    },
+    {
+      "request_id": "fcfc9c55fb0d43c4",
+      "status": "COMPLETED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 5,
+      "steps_executed": 5,
+      "native_success": 0,
+      "target_pos": [
+        -0.44,
+        -0.12,
+        1.01
+      ],
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.4062,
+          -0.09,
+          1.01428
+        ],
+        "quat": [
+          0.99867,
+          0.02092,
+          -0.04476,
+          0.01479
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.41683,
+          -0.09225,
+          1.01518
+        ],
+        "quat": [
+          0.99639,
+          0.04458,
+          -0.06977,
+          0.01851
+        ]
+      }
+    },
+    {
+      "request_id": "e32123525c23479b",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.45,
+        -0.13,
+        1.01518
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.0503,
+        "limit": 0.05,
+        "current": [
+          -0.4168,
+          -0.0923,
+          1.0152
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.41683,
+          -0.09225,
+          1.01518
+        ],
+        "quat": [
+          0.99639,
+          0.04458,
+          -0.06977,
+          0.01851
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.41683,
+          -0.09225,
+          1.01518
+        ],
+        "quat": [
+          0.99639,
+          0.04458,
+          -0.06977,
+          0.01851
+        ]
+      }
+    },
+    {
+      "request_id": "4ea6a34f0c4e4f04",
+      "status": "REJECTED",
+      "tool": "move_eef",
+      "instruction": null,
+      "steps_requested": 0,
+      "steps_executed": 0,
+      "native_success": null,
+      "target_pos": [
+        -0.4568,
+        -0.1223,
+        1.0152
+      ],
+      "rejection": {
+        "code": "LIMIT",
+        "field": "position_m",
+        "got": 0.05,
+        "limit": 0.05,
+        "current": [
+          -0.4168,
+          -0.0923,
+          1.0152
+        ]
+      },
+      "eef_before": {
+        "pos": [
+          -0.41683,
+          -0.09225,
+          1.01518
+        ],
+        "quat": [
+          0.99639,
+          0.04458,
+          -0.06977,
+          0.01851
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.41683,
+          -0.09225,
+          1.01518
+        ],
+        "quat": [
+          0.99639,
+          0.04458,
+          -0.06977,
+          0.01851
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "run_id": "36e2f9a99dbd",
+  "episode_id": "75eda63c9dba",
+  "env": {
+    "suite": "libero_spatial_swap",
+    "task_id": 2,
+    "seed": 0,
+    "init_state_index": 0,
+    "settle_steps": 10,
+    "size": 256,
+    "instruction": "pick up the black bowl from table center and place it on the plate",
+    "filename_language": "pick up the black bowl from table center and place it on the plate",
+    "bddl_language": "Pick the akita black bowl from table center and place it on the plate",
+    "bddl_file": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl"
+  },
+  "model": {},
+  "stop_reason": "native_success",
+  "native_success": true,
+  "control_steps": 85,
+  "sim_time_s": 4.25,
+  "model_calls": 0,
+  "rejections": 0,
+  "unknown": 0,
+  "mode": "vla",
+  "policy": {
+    "kind": "openpi_websocket",
+    "host": "127.0.0.1",
+    "port": 43861,
+    "preprocess": "rotate180+resize_with_pad224, state=eef_pos+rotvec+gripper_qpos",
+    "server_metadata": {
+      "experiment": "embodied-harness-preflight",
+      "config": "pi05_libero",
+      "control": "normalized LIBERO OSC_POSE, 7 dimensions"
+    }
+  },
+  "policy_calls": 9,
+  "policy_wait_s": 0.609,
+  "completed_segments": 9,
+  "wall_s": 6.241,
+  "model_wait_s": 0.0,
+  "tokens": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cached_input_tokens": 0
+  },
+  "budgets": {
+    "max_control_steps": 300,
+    "max_model_calls": 40,
+    "max_wall_s": 1800
+  },
+  "controller_spec_hash": "22ebd1f6f3741bae",
+  "segments": [
+    {
+      "request_id": "2c43af7c54aa46cf",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.20846,
+          0.0,
+          1.17328
+        ],
+        "quat": [
+          0.9996,
+          0.00025,
+          -0.0284,
+          -1e-05
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.19585,
+          0.00491,
+          1.16968
+        ],
+        "quat": [
+          0.99973,
+          0.00049,
+          -0.02323,
+          -0.00056
+        ]
+      }
+    },
+    {
+      "request_id": "db749297757f499c",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.19585,
+          0.00491,
+          1.16968
+        ],
+        "quat": [
+          0.99973,
+          0.00049,
+          -0.02323,
+          -0.00056
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.11243,
+          0.02625,
+          1.15017
+        ],
+        "quat": [
+          0.99974,
+          -0.00351,
+          -0.02032,
+          0.01002
+        ]
+      }
+    },
+    {
+      "request_id": "6062b09758e84e6b",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.11243,
+          0.02625,
+          1.15017
+        ],
+        "quat": [
+          0.99974,
+          -0.00351,
+          -0.02032,
+          0.01002
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.05271,
+          0.03092,
+          1.0598
+        ],
+        "quat": [
+          0.99989,
+          -0.00473,
+          -0.01362,
+          0.00443
+        ]
+      }
+    },
+    {
+      "request_id": "1fb5944c90f74847",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.05271,
+          0.03092,
+          1.0598
+        ],
+        "quat": [
+          0.99989,
+          -0.00473,
+          -0.01362,
+          0.00443
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.06881,
+          0.03301,
+          0.95211
+        ],
+        "quat": [
+          0.99986,
+          0.00245,
+          0.01167,
+          0.01199
+        ]
+      }
+    },
+    {
+      "request_id": "536bcb35750547c2",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.06881,
+          0.03301,
+          0.95211
+        ],
+        "quat": [
+          0.99986,
+          0.00245,
+          0.01167,
+          0.01199
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.0891,
+          0.03657,
+          0.91831
+        ],
+        "quat": [
+          0.99937,
+          -0.01062,
+          0.02783,
+          0.01913
+        ]
+      }
+    },
+    {
+      "request_id": "57bc4b9be1df43bb",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.0891,
+          0.03657,
+          0.91831
+        ],
+        "quat": [
+          0.99937,
+          -0.01062,
+          0.02783,
+          0.01913
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.08089,
+          0.04491,
+          0.97012
+        ],
+        "quat": [
+          0.99937,
+          -0.02285,
+          0.01112,
+          0.0248
+        ]
+      }
+    },
+    {
+      "request_id": "7308d9c021554be4",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.08089,
+          0.04491,
+          0.97012
+        ],
+        "quat": [
+          0.99937,
+          -0.02285,
+          0.01112,
+          0.0248
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          -0.00364,
+          0.08118,
+          1.0469
+        ],
+        "quat": [
+          0.99902,
+          -0.02707,
+          -0.02052,
+          0.0283
+        ]
+      }
+    },
+    {
+      "request_id": "bcf65164f64a4c36",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 10,
+      "native_success": 0,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          -0.00364,
+          0.08118,
+          1.0469
+        ],
+        "quat": [
+          0.99902,
+          -0.02707,
+          -0.02052,
+          0.0283
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.06645,
+          0.08285,
+          0.98203
+        ],
+        "quat": [
+          0.99886,
+          -0.03249,
+          -0.01706,
+          0.03058
+        ]
+      }
+    },
+    {
+      "request_id": "61b443834b9c40c3",
+      "status": "COMPLETED",
+      "steps_requested": 10,
+      "steps_executed": 5,
+      "native_success": 1,
+      "rejection": null,
+      "eef_before": {
+        "pos": [
+          0.06645,
+          0.08285,
+          0.98203
+        ],
+        "quat": [
+          0.99886,
+          -0.03249,
+          -0.01706,
+          0.03058
+        ]
+      },
+      "eef_after": {
+        "pos": [
+          0.06816,
+          0.07802,
+          0.94067
+        ],
+        "quat": [
+          0.99878,
+          -0.03792,
+          -0.00573,
+          0.03125
+        ]
+      }
+    }
+  ]
+}

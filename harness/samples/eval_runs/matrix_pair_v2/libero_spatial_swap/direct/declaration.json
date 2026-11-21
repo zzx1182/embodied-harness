@@ -1,0 +1,24 @@
+{
+  "mode": "direct",
+  "suite": "libero_spatial_swap",
+  "tasks": [
+    1,
+    3,
+    0
+  ],
+  "seeds": [
+    0
+  ],
+  "init_state_index": [
+    0
+  ],
+  "plan": null,
+  "budgets": {
+    "max_control_steps": 300,
+    "max_calls": 30,
+    "max_wall_s": 2400.0
+  },
+  "spec_hash": "6a4e8a2f95d82dda",
+  "denominator": 3,
+  "started": "2026-09-23T06:59:12+0000"
+}
